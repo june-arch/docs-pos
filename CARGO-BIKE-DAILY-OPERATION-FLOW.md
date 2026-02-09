@@ -750,7 +750,7 @@ totalLossValue = missingValue + damagedValue
 │                      KONFIGURASI                                │
 │  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────────┐  │
 │  │ Cargo Bike  │  │   Shift     │  │  Product Allocation     │  │
-│  │  (WDI)      │  │ (DC/WDI)    │  │       (WDI)             │  │
+│  │  (WDI)      │  │ (WDI)       │  │       (DC)              │  │
 │  └──────┬──────┘  └──────┬──────┘  └───────────┬─────────────┘  │
 └─────────┼────────────────┼─────────────────────┼────────────────┘
           │                │                     │
@@ -916,7 +916,7 @@ totalLossValue = missingValue + damagedValue
 
 | Waktu | Aktor | Aktivitas | Endpoint | Status |
 |-------|-------|-----------|----------|--------|
-| 07:00 | DC_ADMIN | Assign shift | POST /shift-assignments | SCHEDULED |
+| 07:00 | WDI_ADMIN | Assign shift | POST /shift-assignments | SCHEDULED |
 | 08:00 | WD_MOBILE | Login | POST /auth/login | - |
 | 08:00 | WD_MOBILE | Start shift | POST /shift-assignments/{id}/start | ACTIVE |
 | 08:05 | WD_MOBILE | Start day | POST /cb-operations/cargo-bikes/{id}/start | STARTED |
