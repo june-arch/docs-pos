@@ -18,47 +18,6 @@ Dokumen ini menjelaskan alur lengkap permintaan stok dari Distribution Center (D
 
 ---
 
-## Overview
-
-```
-DC_ADMIN                    HO_ADMIN (WDI)              SUPPLIER
-    |                            |                          |
-    |── Create Stock Request ────|                          |
-    |                            |                          |
-    |◄──── Request Received ◄────|                          |
-    |                            |                          |
-    |                            |── Review Items ──────────|
-    |                            |    (By Supplier)         |
-    |                            |                          |
-    |                            |── Approve Supplier ──────|
-    |                            |    (Create PO)           |
-    |                            |                          |
-    |◄── Order Created ◄─────────|                          |
-    |                            |                          |
-    |                            |                          |── Process
-    |                            |                          |    Order
-    |                            |                          |
-    |                            |◄── Shipped ◄─────────────|
-    |                            |                          |
-    |◄── Barang Sampai ◄─────────|                          |
-    |                            |                          |
-    |── Mark Arrived ────────────|                          |
-    |                            |                          |
-    |── Start Checking ──────────|                          |
-    |                            |                          |
-    |── Check Items ─────────────|                          |
-    |                            |                          |
-    |── Complete ────────────────|                          |
-    |                            |                          |
-```
-
-**Actor:**
-- **DC_ADMIN**: Distribution Center Admin, request dan terima barang
-- **WDI_ADMIN**: Head Office, approve dan manage supplier
-- **SUPPLIER**: Vendor yang supply barang (external)
-
----
-
 ## Fase 1: DC Create Stock Request
 
 ### 1.1 DC Lihat Min Stock Products
