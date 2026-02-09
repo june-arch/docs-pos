@@ -24,7 +24,7 @@ Dokumen ini menjelaskan alur lengkap operasional harian Cargo Bike dari konfigur
 Flow ini mencakup seluruh siklus operasional harian Cargo Bike:
 
  ```
-   DC_ADMIN: Assign shift (SCHEDULED)
+   WDI_ADMIN: Assign shift (SCHEDULED)
        ↓
    WD_MOBILE: Start shift (SCHEDULED → ACTIVE)
        ↓
